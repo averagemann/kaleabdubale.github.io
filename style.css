@@ -1,0 +1,61 @@
+/* CSS code for Copy Address Example */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  legend {
+    font-weight: bold;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  label::after {
+    content: "\A"; /* Add a line break after each label */
+    white-space: pre;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:invalid {
+    border-color: red;
+  }
+  
+  input[type="text"]:valid {
+    border-color: green;
+  }
+  
+  input[type="text"]:invalid + .validation-message {
+    display: block;
+    color: red;
+  }
+  
+  input[type="text"]:valid + .validation-message {
+    display: none;
+  }
+  
+  .validation-message {
+    display: none;
+    margin-top: 5px;
+  }
+  
